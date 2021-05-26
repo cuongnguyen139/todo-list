@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.scss"],"names":[],"mappings":"AAAA,QACE,4BAAA","file":"main.2237f3fd.chunk.css","sourcesContent":[".strike {\n  text-decoration: line-through;\n}\n"]}
