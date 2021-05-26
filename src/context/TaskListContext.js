@@ -10,7 +10,7 @@ const TaskListContextProvider = (props) => {
 
   //add a task
   const addTask = (title) => {
-    setTasks([...tasks, { title, id: uuid() }]);
+    setTasks([...tasks, { title, id: uuid(), complete: false }]);
   };
 
   //remove a task
