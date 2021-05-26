@@ -5,6 +5,7 @@ const TaskForm = () => {
   const { addTask, edittedItem, editTask } = useContext(TaskListContext);
   const [title, setTitle] = useState('');
 
+  //function to handle adding task or editting task
   const submitHandler = (e) => {
     e.preventDefault();
     if (!edittedItem) {
@@ -15,10 +16,12 @@ const TaskForm = () => {
     }
   };
 
+  //function to set value of title to state when input form is changed
   const changeHandler = (e) => {
     setTitle(e.target.value);
   };
 
+  ////function to set value of title to editted input field
   useEffect(() => {
     if (edittedItem) {
       setTitle(edittedItem.title);
